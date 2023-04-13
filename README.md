@@ -4,8 +4,11 @@ A discord bot with Chat and Reminder Functionality in Python
 
 # Dependencies
 Python 3.6+
+
 discord.py
+
 asyncio
+
 openai
 
 
@@ -27,6 +30,5 @@ To interact with the GPT-3 model, enter either /ai or /gpt followed by your mess
 
 2. !reminder
 To set a reminder, enter !reminder <time> <reminder_text>. The time must be specified in seconds, minutes, hours or days, and end with s, m, h, or d. Example: !reminder 1h Go for a walk. The bot will then send a confirmation message and remind you after the specified time has elapsed.
-
 !delete_reminder
 To delete all reminders, enter !delete_reminder. The bot will then cancel all reminder tasks and send a confirmation message.
