@@ -3,7 +3,7 @@ import asyncio
 from discord.ext import commands
 from chatgpt_ai.openai import chatgpt_response
 from keepalive import keep_alive
-
+import os
 
 class MyClient(discord.Client):
    
@@ -66,7 +66,7 @@ class MyClient(discord.Client):
 
 intents = discord.Intents.default()
 intents.message_content = True
-key = 'MTA5NDk2OTg4MTk4MTYxNjEzOQ.Gzqfk2.qXWrPBZRYaF8sy-C0XWyQLQ-0spbaCfaLJ2_bs'
+key = os.environ['tokendis']
 client = MyClient(intents=intents)
 keep_alive()
 client.run(key)

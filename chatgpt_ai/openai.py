@@ -1,6 +1,6 @@
 import openai
-
-openai.api_key='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'
+import os
+openai.api_key=os.environ['apikey']
 def chatgpt_response(prompt):
   response=openai.Completion.create(
     model="text-davinci-003",
